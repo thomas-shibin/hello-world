@@ -2,23 +2,26 @@
 
 ## Introduction
 
-** Hello World coders**
+**Hello World Coderssss...**
 
-Welcome to the hello world repo, I am sure you are here to learn something interesting. The major topics you will find here are Automation, RPA, Programming, and Cloud. 
+Welcome to the hello world repo, I am sure you are here to learn something interesting. The major topics you will find here are Automation, Programming, and Cloud. 
 I know it's not easy to find what you need, the internet is wide and sometimes misguiding. Therefore, I will be only adding here the contents I learned and experimented with.
 
 Let's start cooking
 
 ## Ingredients / Masalas
 
-1. Grpc
-2. Go
-3. RPA
-4. BPMN
-5. Kubernetes
-6. Istio.
-7. Envoy Proxy.
-8. Github Actions.
+1. Programming
+   - [gRPC](./gRPC)
+   - [Golang](./Golang)
+2. Automation
+   - [RPA](./RPA)
+   - [BPMN](./BPMN)
+3. Cloud / DevOps
+   - [Kubernetes](./Kubernetes)
+   - [Istio](./Istio)
+   - [Envoy](./Envoy)
+   - [Github Actions](./Github_Actions)
 
 ## Menu Items
 
