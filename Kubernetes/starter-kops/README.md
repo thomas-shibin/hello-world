@@ -10,11 +10,11 @@ It’s a command line tool that offers simple commands to create, update and del
 ### Cluster
 
 You can identify the instance type fits your usage from ![here](https://aws.amazon.com/ec2/instance-types)
-```I will be using ***t3.large*** instance type as an example```
+```I will be using t3.large instance type as an example```
 
 1. AWS EC2 Instance with admin privileges(1 x t3.large with 30 GiB with Amazon Linux OS (default)) - We will use this Instance to install kOps, kubectl and setup a cluster
 
-```We will be creating a cluster with 1 Master and 2 Nodes having ***t3.large*** instance types```
+```We will be creating a cluster with 1 Master and 2 Nodes having t3.large instance types```
 
 2. SSH Client with a .pem file for accessing EC2 instance. ```Eg: MobaXterm, PuTTy```
 
@@ -29,7 +29,7 @@ You can identify the instance type fits your usage from ![here](https://aws.amaz
 
 1. SSH into the ec2 instance and follow the steps below.
 
-For general use, the ```***aws configure***``` command is the fastest way to set up your AWS CLI installation
+For general use, the ```aws configure``` command is the fastest way to set up your AWS CLI installation
 
 The following example shows sample values. Replace them with your own values as described in the following sections.
 
@@ -40,7 +40,7 @@ The following example shows sample values. Replace them with your own values as 
    Default output format [None]: json
 ```
 
-***Ref:![CLI configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+Ref:![CLI configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 
 Run update packages / metadata / libraries
 
