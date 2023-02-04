@@ -24,6 +24,7 @@ Let's start cooking
    - [Istio](./Istio)
    - [Envoy](./Envoy)
    - [Github Actions](./Github_Actions)
+   - [Terraform](./terraform)
 
 ## Menu Items
 
