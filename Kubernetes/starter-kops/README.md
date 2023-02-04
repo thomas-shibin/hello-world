@@ -48,48 +48,48 @@ Run update packages / metadata / libraries
 
 ### Install kOps
 
-1. Download the binary file
+1. Download the binary file <br />
 ```$ curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64```
 
-2. Apply execute permission to the binary
+2. Apply execute permission to the binary <br />
 ```$ chmod +x kops```
 
-3. Move the file to a proper destination
+3. Move the file to a proper destination <br />
 ```$ sudo mv kops /usr/local/bin/kops```
 
 ### Install kubectl
 
-1. Download the binary file.
+1. Download the binary file. <br />
 ```$ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"```
 
-2. Apply execute permission to the binary
+2. Apply execute permission to the binary <br />
 ```$ chmod +x ./kubectl```
 
-3. Copy the binary to the folder in your PATH.
+3. Copy the binary to the folder in your PATH. <br />
 ```$ mkdir $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH```
 
-4. Add the $HOME/bin path to your shell initialization file.
+4. Add the $HOME/bin path to your shell initialization file. <br />
 ```$ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc```
 
-5. After kubectl installation, verify its version.
+5. After kubectl installation, verify its version. <br />
 ```$ kubectl version --client --output=yaml```
 
 ### S3 bucket
 
-1. To see existing bucket
+1. To see existing bucket <br />
 ```$ aws s3 ls```
 
-2. Create a s3 bucket for kops to store its state and configurations.
+2. Create a s3 bucket for kops to store its state and configurations. <br />
 ```$ aws s3 mb s3://helloworld-k8-state-store --region us-east-2```
 NOTE: change the bucket name (must be unique) and region (change as per your region)
 
-3. Enable versioning to store / restore prev versions.
+3. Enable versioning to store / restore prev versions. <br />
 ```$ aws s3api put-bucket-versioning --bucket helloworld-k8-state-store --versioning-configuration Status=Enabled```
 
-4. Export the variable KOPS_STATE_STORE.
+4. Export the variable KOPS_STATE_STORE. <br />
 ```$ export KOPS_STATE_STORE=s3://helloworld-k8-state-store```
 
-5. Add the variable to your shell initialization file.
+5. Add the variable to your shell initialization file. <br />
 ```$ echo 'export KOPS_STATE_STORE=s3://saltsecurity-k8-state-store' >> ~/.bashrc```
 
 ### Kubernetes Cluster
