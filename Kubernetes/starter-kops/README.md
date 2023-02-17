@@ -86,7 +86,7 @@ NOTE: change the bucket name (must be unique) and region (change as per your reg
 ```$ export KOPS_STATE_STORE=s3://helloworld-k8-state-store```
 
 5. Add the variable to your shell initialization file. <br />
-```$ echo 'export KOPS_STATE_STORE=s3://saltsecurity-k8-state-store' >> ~/.bashrc```
+```$ echo 'export KOPS_STATE_STORE=s3://helloworld-k8-state-store' >> ~/.bashrc```
 
 ### Kubernetes Cluster
 
@@ -167,7 +167,7 @@ NOTE: use --duration=000h (eg: --duration=720h) to set expiration, default is 1 
 Use the Authentication Token from previos step to access the dashboard
 
 
-**Happy Kubernetes**
+**Happy Kubernetes** :rocket: :rocket: :rocket:
 
 
 
