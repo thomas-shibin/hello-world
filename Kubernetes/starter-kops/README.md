@@ -167,7 +167,7 @@ NOTE: use --duration=000h (eg: --duration=720h) to set expiration, default is 1 
 Use the Authentication Token from previos step to access the dashboard
 
 
-*** Happy Kubernetes ***
+**Happy Kubernetes**
 
 
 
