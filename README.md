@@ -4,7 +4,7 @@
 
 **Hello World Coderssss...**
 
-Welcome to the hello world repo, I am sure you are here to learn something interesting. The major topics you will find here are Automation, Programming, and Cloud. 
+Welcome to the hello world repo, I am sure you are here to learn something interesting. The discussions you will find here are Automation, Programming, and Cloud. 
 I know it's not easy to find what you need, the internet is wide and sometimes misguiding. Therefore, I will be only adding here the contents I learned and experimented with.
 
 Let's start cooking
