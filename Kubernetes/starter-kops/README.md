@@ -168,7 +168,3 @@ Use the Authentication Token from previos step to access the dashboard
 
 
 **Happy Kubernetes** :rocket: :rocket: :rocket:
-
-
-
-
