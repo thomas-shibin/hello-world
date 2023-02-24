@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  envoy:
+    container_name: envoy
+    image: envoyproxy/envoy:v1.24.2
+    command:
+      - "--service-node proxy"
+      - "--service-cluster proxy"
+      - "--config-path /etc/envoy/envoy.yaml"
+      - "--concurrency 1"
+      - "--mode serve"
+      - "--log-level debug"
+    restart: unless-stopped
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+    depends_on: [httpbin]
+    ports:
+      - 8080:8080 # httpbin proxy
+      - 15000:15000 # admin interface
+    networks:
+      - helloworld-nwk
+
+  httpbin:
+    container_name: httpbin
+    image: kennethreitz/httpbin
+    restart: unless-stopped
+    ports:
+      - 9080:80
+    networks: 
+      - helloworld-nwk
+
+networks: 
+  helloworld-nwk:
